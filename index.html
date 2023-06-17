@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkers</title>
+    <link rel="stylesheet" href="Checkers.css" />
+  </head>
+  <body>
+    <div class="letter">
+      <span>A</span>
+      <span>B</span>
+      <span>C</span>
+      <span>D</span>
+      <span>E</span>
+      <span>F</span>
+      <span>G</span>
+      <span>H</span>
+    </div>
+    <div class="checkers_table">
+      <div class="numbers">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+      </div>
+      <div class="cells">
+        <div class="cell a 1" class="dark"></div>
+        <div class="cell b 1" class="dark">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell c 1" class="dark"></div>
+        <div class="cell d 1">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell e 1" class="dark"></div>
+        <div class="cell f 1">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell g 1" class="dark"></div>
+        <div class="cell h 1">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell a 2">
+          <img class="dark" src="dark.png" />
+        </div>
+
+        <div class="cell b 2"></div>
+        <div class="cell c 2">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell d 2" class="dark"></div>
+        <div class="cell e 2">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell f 2"></div>
+        <div class="cell g 2">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell h 2"></div>
+        <div class="cell a 3"></div>
+        <div class="cell b 3">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell c 3"></div>
+        <div class="cell d 3">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell e 3"></div>
+        <div class="cell f 3">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell g 3"></div>
+        <div class="cell h 3">
+          <img class="dark" src="dark.png" />
+        </div>
+        <div class="cell a 4"></div>
+        <div class="cell b 4"></div>
+        <div class="cell c 4"></div>
+        <div class="cell d 4"></div>
+        <div class="cell e 4"></div>
+        <div class="cell f 4"></div>
+        <div class="cell g 4"></div>
+        <div class="cell h 4"></div>
+        <div class="cell a 5"></div>
+        <div class="cell b 5"></div>
+        <div class="cell c 5"></div>
+        <div class="cell d 5"></div>
+        <div class="cell e 5"></div>
+        <div class="cell f 5"></div>
+        <div class="cell g 5"></div>
+        <div class="cell h 5"></div>
+        <div class="cell a 6">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell b 6"></div>
+        <div class="cell c 6">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell d 6"></div>
+        <div class="cell e 6">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell f 6"></div>
+        <div class="cell g 6">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell h 6"></div>
+        <div class="cell a 7"></div>
+        <div class="cell b 7">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell c 7"></div>
+        <div class="cell d 7">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell e 7"></div>
+        <div class="cell f 7">
+          <img class="light" src="light.png" alt="checker" />
+        </div>
+        <div class="cell g 7"></div>
+        <div class="cell h 7">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell a 8">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell b 8"></div>
+        <div class="cell c 8">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell d 8"></div>
+        <div class="cell e 8">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell f 8"></div>
+        <div class="cell g 8">
+          <img class="light" src="light.png" />
+        </div>
+        <div class="cell h 8"></div>
+      </div>
+    </div>
+    <div class="gameTurn">
+      <p>Turn</p>
+      <div id="turnBackround" class="turnBackround"></div>
+      <button id="passButton">Pass</button>
+    </div>
+
+    <script src="./findPlaces.js"></script>
+    <script src="./oldFrameWork.js"></script>
+    <script src="paintCell.js"></script>
+    <script src="oldCheckers.js"></script>
+    <script src="attack.js"></script>
+    <script src="queen.js"></script>
+    <script>
+      enableWhiteChecker();
+    </script>
+  </body>
+</html>
