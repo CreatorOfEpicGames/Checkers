@@ -1,0 +1,83 @@
+body {
+  background: url("./wooden_backround.jpg");
+  padding-left: 600px;
+}
+
+.checkers_table {
+  width: 668px;
+  height: 648px;
+  margin-left: 50px;
+  display: flex;
+}
+.cell {
+  height: 75px;
+  width: 75px;
+  border: 1px solid rgb(43, 41, 41);
+  display: inline-block;
+  background-color: rgb(230, 220, 220);
+}
+.letter {
+  display: flex;
+  margin-left: 50px;
+  padding-top: 50px;
+  width: 642px;
+  text-shadow: 2px 2px 10px white;
+  font-size: 24px;
+  justify-content: space-around;
+  padding-left: 20px;
+}
+.numbers {
+  margin-right: 10px;
+  color: black;
+  text-shadow: 2px 2px 10px white;
+  display: flex;
+  height: 648px;
+  font-size: 24px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.cells {
+  background-color: black;
+}
+.black {
+  background-color: rgb(37, 36, 36) !important;
+}
+
+.box_shadow {
+  box-shadow: inset 0 0 15px 2px black;
+}
+.green-shadow {
+  box-shadow: inset 0 0 30px 0px rgb(0, 255, 13);
+}
+img {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+}
+.attack-shadow {
+  box-shadow: inset 0 0 25px 3px rgb(255, 0, 0);
+}
+.gameTurn {
+  position: absolute;
+  top: 6%;
+  left: 75%;
+}
+.gameTurn p {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  text-shadow: 2px 2px 10px white;
+  text-align: center;
+}
+.gameTurn button {
+  padding: 3px 34px;
+  display: none;
+}
+.turnBackround {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+.activeChecker {
+  filter: drop-shadow(0 0 5px rgb(255, 0, 0));
+}
